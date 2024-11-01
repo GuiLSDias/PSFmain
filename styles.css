@@ -1,0 +1,137 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f7fa; /* Fundo leve para suavizar a experiência */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #535455 !important; 
+    padding: 16px;
+}
+
+#logo {
+    width: 50px; /* Reduzido para uma aparência mais limpa */
+    height: 50px;
+    padding-right: 10px;
+}
+
+/* Estilo para cabeçalhos */
+h1, h2 {
+    color: #0056b3; /* Azul escuro para melhor contraste */
+}
+
+/* Estilo para seções */
+.about, .project-actions, .impact, .donate {
+    padding: 30px;
+    background-color: #ffffff; /* Fundo branco para seções */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 30px;
+}
+
+/* Estilo para parágrafos */
+p {
+    line-height: 1.6;
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+}
+
+/* Estilo para a tabela de ações */
+.table {
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Para arredondar os cantos da tabela */
+}
+
+.custom-blue-header {
+    background-color: #0056b3; /* Azul escuro para cabeçalho da tabela */
+    color: #ffffff; /* Texto branco */
+}
+
+.table th, .table td {
+    padding: 15px;
+    vertical-align: middle; /* Alinha verticalmente o conteúdo da célula */
+}
+
+/* Estilo para botão de doação */
+#donateBtn {
+    background-color: #28a745; /* Verde para chamar atenção */
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#donateBtn:hover {
+    background-color: #218838; /* Verde mais escuro no hover */
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #343a40; /* Escuro para o rodapé */
+    color: #ffffff;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about, .project-actions, .impact, .donate {
+        padding: 20px; /* Reduzido o padding em telas menores */
+    }
+
+    h1 {
+        font-size: 28px; /* Tamanho reduzido em telas pequenas */
+    }
+
+    h2 {
+        font-size: 24px; /* Tamanho reduzido em telas pequenas */
+    }
+
+    iframe {
+        width: 100%;
+        height: auto; /* Responsividade do iframe */
+    }
+}
+
+/* Estilo para linhas expansíveis */
+.expandable-row {
+    display: none; /* Oculto por padrão */
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #555;
+}
+
+.show {
+    display: table-row; /* Exibe a linha expansível quando está ativa */
+}
+
+.clickable-row {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para o mapa */
+iframe {
+    border-radius: 10px; /* Cantos arredondados para o iframe do Google Maps */
+}
+
+/* Hover nas linhas da tabela */
+.clickable-row:hover {
+    background-color: #e9ecef; /* Leve mudança de cor ao passar o mouse */
+}
+
+.image-container {
+    height: 80vh;
+    width: 100vw
+}
+
+.img-fluid {
+
+    height: 80vh;
+    width: 100vw
+}
