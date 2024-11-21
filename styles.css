@@ -5,7 +5,19 @@ body {
     background-color: #f4f7fa; /* Fundo leve para suavizar a experiência */
     margin: 0;
     padding: 0;
+   
 }
+
+.carrossel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+    
+
 
 /* Estilo para a barra de navegação */
 .navbar {
@@ -124,14 +136,36 @@ iframe {
 .clickable-row:hover {
     background-color: #e9ecef; /* Leve mudança de cor ao passar o mouse */
 }
-
-.image-container {
-    height: 80vh;
-    width: 964,8px;
-}
-
-.img-fluid {
-
-    height: 80vh;
-    width: 100vw;
-}
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slide {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
